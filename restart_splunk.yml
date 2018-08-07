@@ -1,0 +1,6 @@
+---
+- name: Restart Splunk
+  hosts: splunk-servers
+  tasks:
+  - name: Restart Splunk with "splunk restart" command
+    shell: /opt/splunk/bin/splunk restart
