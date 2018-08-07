@@ -1,5 +1,5 @@
 ---
-- hosts: 192.168.2.111
+- hosts: all
   tasks:
   - name: Installing Latest version of Apache
     yum: pkg=httpd state=latest
