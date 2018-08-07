@@ -1,0 +1,7 @@
+---
+- hosts: 192.168.2.111
+  tasks:
+  - name: Installing Latest version of Apache
+    yum: pkg=httpd state=latest
+  - name: Start httpd service
+    service: name=httpd state=restarted
